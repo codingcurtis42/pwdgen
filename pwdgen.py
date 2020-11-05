@@ -1,5 +1,4 @@
 import random
-fizz = []
 
 chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()'
 
@@ -25,12 +24,13 @@ def howmanyruns():
 
 
 def randoed(charamount, pwdamounts):
-    genpwd = []
+    fizz = []
     for i in range(int(pwdamounts)):
+        genpwd = []
         for j in range(int(charamount)):
-
             k = random.choice(chars)
             genpwd.append(k)
+            print(''.join(genpwd))
         fizz.append(''.join(genpwd))
     return fizz
 
